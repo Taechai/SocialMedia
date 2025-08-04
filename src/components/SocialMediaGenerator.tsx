@@ -1,6 +1,7 @@
 'use client'
 
 import { useState } from 'react'
+import Image from 'next/image'
 
 interface PostTemplate {
   id: string
@@ -362,9 +363,11 @@ export default function SocialMediaGenerator() {
               </button>
             </div>
             <div className="bg-gray-50 p-4 rounded-lg border">
-              <img 
+              <Image 
                 src={generatedImage} 
                 alt="Generated social media image" 
+                width={1024}
+                height={1024}
                 className="w-full h-auto rounded-lg shadow-md"
               />
             </div>
